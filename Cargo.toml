@@ -1,0 +1,15 @@
+[package]
+name = "libtut"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+embedded-chacha = "0.1.0"
+embedded-io-async = "0.6.1"
+x-wing = { version = "0.0.1-pre.1", default-features = false }
+kem = "^0.3.0-pre.0"
+sha3 = { version = "0.10.8", default-features = false }
+slh-dsa = { version = "0.0.3", default-features = false }
+rand = { version = "0.8", default-features = false, features = ["rand_chacha"] }
+hash-based-signature = { version = "0.1.1", features = ["embedded-io-async"] }
+hybrid-array = "0.3.0"
